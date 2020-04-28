@@ -30,6 +30,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:textSize="20dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:id="@+id/bt_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -39,6 +41,8 @@
         app:layout_constraintWidth_percent="0.5" />
 
     <Button
+        android:textSize="20dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:id="@+id/bt_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

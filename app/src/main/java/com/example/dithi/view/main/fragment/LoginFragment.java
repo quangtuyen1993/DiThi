@@ -1,5 +1,6 @@
 package com.example.dithi.view.main.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -18,6 +19,7 @@ import com.example.dithi.R;
 import com.example.dithi.model.User;
 import com.example.dithi.service.ApiService;
 import com.example.dithi.service.UserApi;
+import com.example.dithi.view.product.ManagerActivity;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -69,6 +71,8 @@ public class LoginFragment extends Fragment {
                     User user = response.body();
                     assert user != null;
                     message = "Hello" + user.getEmail();
+                    Intent intent=new Intent(requireActivity(), ManagerActivity.class);
+                    startActivity(intent);
                 } else {
                     message = "Email or password incorrect";
                 }

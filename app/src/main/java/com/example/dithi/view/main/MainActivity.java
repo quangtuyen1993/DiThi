@@ -1,4 +1,4 @@
-package com.example.dithi.view;
+package com.example.dithi.view.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
